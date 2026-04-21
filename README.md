@@ -1,9 +1,9 @@
 # E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.d+šč+š+edsd+š+š
 
 ## Popis
 
-E-SHOP je webová aplikace pro online nakupování. Tato aplikace umožňuje uživatelům procházet a vyhledávat produkty, přidávat je do košíku a provádět objednávky.
+E-SHOP je webová aplikace pro online nakje uživatelům procházet a vyhledávat produkty, přidávat je do košíku a provádět objednávky.
 
 ## Funkce
 
@@ -18,7 +18,6 @@ E-SHOP je webová aplikace pro online nakupování. Tato aplikace umožňuje už
 3. Spusťte aplikaci pomocí příkazu `npm start`. coto znamena
 
 ## Použité technologie
-
 - HTML
 - CSS
 - JavaScript
@@ -27,8 +26,7 @@ E-SHOP je webová aplikace pro online nakupování. Tato aplikace umožňuje už
 - MongoDB 
 
 ## Příspěvky
-
-Pokud máte nějaké připomínky nebo nápady na vylepšení, neváhejte vytvořit nový problém nebo poslat požadavek na začlenění změn.
+dasdě+š+š+bo nápady na vylepšení, neváhejte vytvořit nový problém nebo poslat požadavek na začlenění změn.
 
 ## Licence
 
