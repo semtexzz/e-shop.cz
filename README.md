@@ -1,21 +1,44 @@
 # E-SHOP
 Tento repozitář obsahuje zdrojový kód pro E-SHOP.d+šč+š+edsd+š+š
 
-## Popis
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-E-SHOP je webová aplikace pro online nakje uživatelům procházet a vyhledávat produkty, přidávat je do košíku a provádět objednávky.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-## Funkce
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-- Procházení a vyhledávání produktů
-- Přidávání produktů do košíku
-- Provádění objednávek
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-## Instalace
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-1. Naklonujte tento repozitář na své lokální zařízení. negrik
-2. Nainstalujte závislosti pomocí příkazu `npm install`. negr
-3. Spusťte aplikaci pomocí příkazu `npm start`. coto znamena
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
 ## Použité technologie
 - HTML
@@ -28,6 +51,50 @@ E-SHOP je webová aplikace pro online nakje uživatelům procházet a vyhledáva
 ## Příspěvky
 dasdě+š+š+bo nápady na vylepšení, neváhejte vytvořit nový problém nebo poslat požadavek na začlenění změn.
 
-## Licence
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
-Tento projekt je licencován pod [MIT licencí](LICENSE).dfnjikfjnkdfdf
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
+# E-SHOP
+Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+
