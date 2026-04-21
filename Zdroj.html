@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyberte zdroj</title>
+    <style>
+        .power-supply {
+            display: inline-block; 
+            margin: 10px;
+            width: 200px; 
+            text-align: center;
+            cursor: pointer; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .power-supply img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .power-supply p {
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }    
+    </style>
+</head>
+<body>
+    <h1>Vyberte zdroj</h1>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/am8esla9loidl8ag2o4jts4j85-1_1/obrazek" alt="Obrázek zdroje 1">
+        <p>Corsair RM750x 750W 80+ Gold</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/3tqedht0jch53b5v0gi35v5e6d-4_1/obrazek" alt="Obrázek zdroje 2">
+        <p>EVGA Supernova 650 G5 650W 80+ Gold</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/7cj040t2huh8986dnl9i5s1pc8-4_1/obrazek" alt="Obrázek zdroje 3">
+        <p>Seasonic Focus GX-850 850W 80+ Gold</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/8e17jg4pcqijob6j2o4i8024s1_1/obrazek" alt="Obrázek zdroje 4">
+        <p>Thermaltake Toughpower GF1 650W 80+ Gold</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/ca70fnqecui04960lblg1g20kc-1_1/obrazek" alt="Obrázek zdroje 5">
+        <p>Cooler Master MWE Gold 750 V2 750W 80+ Gold</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="power-supply">
+        <img src="https://iczc.cz/b3a1f4u2i2in3835df302ih45b-5_1/obrazek" alt="Obrázek zdroje 6">
+        <p>be quiet! Straight Power 11 Platinum 650W 80+ Platinum</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const powerSupplies = document.querySelectorAll(".power-supply");
+        const totalPrice = document.getElementById("totalPrice");
+
+        powerSupplies.forEach(supply => {
+            supply.addEventListener("click", updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            powerSupplies.forEach(supply => {
+                if (supply.classList.contains('selected')) {
+                    const supplyText = supply.querySelector("p").textContent;
+                    const supplyPrice = parseInt(supplyText.split(":")[1].trim());
+                    if (!isNaN(supplyPrice)) { 
+                        total += supplyPrice;
+                    }
+                }
+            });
+            totalPrice.textContent = `Celková cena: ${total} Kč`;
+        }
+
+        powerSupplies.forEach(supply => {
+            supply.addEventListener("click", () => {
+                powerSupplies.forEach(item => item.classList.remove('selected'));
+                supply.classList.add('selected');
+                updateTotalPrice();
+            });
+        });
+    </script>
+</body>
+</html>

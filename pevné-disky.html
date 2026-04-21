@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyberte pevný disk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .storage-drive {
+            display: inline-block; 
+            margin: 30px;
+            width: 140px; 
+            text-align: center;
+            cursor: pointer; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .storage-drive img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .storage-drive p {
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .storage-drive .price {
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vyberte pevný disk</h1>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/72r5ikpbpagrv8m7m1tu42gmqd_1/obrazek" alt="Obrázek pevného disku 1">
+        <p>Seagate Barracuda 2TB</p>
+        <p class="price">Cena: 2999 Kč</p>
+    </div>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/078m9d2so0gl49voh7l54v2dm6-2_1/obrazek" alt="Obrázek pevného disku 2">
+        <p>Western Digital Blue 1TB</p>
+        <p class="price">Cena: 2499 Kč</p>
+    </div>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/1ic6uue4akgribok4he2bjokb5-1_1/obrazek" alt="Obrázek pevného disku 3">
+        <p>Samsung 970 EVO Plus 500GB</p>
+        <p class="price">Cena: 1699 Kč</p>
+    </div>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/8cpipjer6ck0d8pg7hhr8f7stc_1/obrazek" alt="Obrázek pevného disku 4">
+        <p>Crucial MX500 1TB</p>
+        <p class="price">Cena: 3199 Kč</p>
+    </div>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/1ecf2veld2i4p9nervalk0b1ed-3_1/obrazek" alt="Obrázek pevného disku 5">
+        <p>Kingston A2000 250GB</p>
+        <p class="price">Cena: 999 Kč</p>
+    </div>
+
+    <div class="storage-drive">
+        <img src="https://iczc.cz/bt7312j00ihu7au13ia517knnd-4_1/obrazek" alt="Obrázek pevného disku 6">
+        <p>ADATA SU635 480GB</p>
+        <p class="price">Cena: 1299 Kč</p>
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const storageDrives = document.querySelectorAll(".storage-drive");
+        const totalPrice = document.getElementById("totalPrice");
+
+        storageDrives.forEach(drive => {
+            drive.addEventListener("click", updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            storageDrives.forEach(drive => {
+                if (drive.classList.contains('selected')) {
+                    const driveText = drive.querySelector("p.price").textContent;
+                    const drivePrice = parseInt(driveText.split(":")[1].trim()); // Получаем цену из текста
+                    if (!isNaN(drivePrice)) { // Проверяем, что удалось получить число
+                        total += drivePrice;
+                    }
+                }
+            });
+            totalPrice.textContent = `Celková cena: ${total} Kč`;
+        }
+
+        storageDrives.forEach(drive => {
+            drive.addEventListener("click", () => {
+                storageDrives.forEach(item => item.classList.remove('selected'));
+                drive

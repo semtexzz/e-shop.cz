@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyberte skříň</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .case {
+            display: inline-block;
+            margin: 20px;
+            width: 170px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .case img {
+            width: 100%;
+            max-height: 170px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .case .price {
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vyberte skříň</h1>
+
+    <div class="case">
+        <img src="https://iczc.cz/csa2ong7mih9ia4uptdvim2ua2-3_1/obrazek" alt="Obrázek skříně 1">
+        <p>NZXT H510 ATX Mid Tower</p>
+        <p class="price">Cena: 1790 Kč</p>
+    </div>
+
+    <div class="case">
+        <img src="https://iczc.cz/a8hbv8i33oh8oa25v39asg8nig_1/obrazek" alt="Obrázek skříně 2">
+        <p>Fractal Design Meshify C ATX Mid Tower</p>
+        <p class="price">Cena: 1929 Kč</p>
+    </div>
+
+    <div class="case">
+        <img src="https://image.alza.cz/products/UY009f292/UY009f292-03.jpg?width=1000&height=1000" alt="Obrázek skříně 3">
+        <p>Corsair 275R Airflow ATX Mid Tower</p>
+        <p class="price">Cena: 1975 Kč</p>
+    </div>
+
+    <div class="case">
+        <img src="https://image.alza.cz/products/PHmnab/PHmnab.jpg?width=1000&height=1000" alt="Obrázek skříně 4">
+        <p>Phanteks Eclipse P400A ATX Mid Tower</p>
+        <p class="price">Cena: 2159 Kč</p>
+    </div>
+
+    <div class="case">
+        <img src="https://iczc.cz/abp8r2e734jj3blpmpe55if47a-1_1/obrazek" alt="Obrázek skříně 5">
+        <p>Cooler Master MasterBox MB320L ARGB MicroATX Mid Tower</p>
+        <p class="price">Cena: 1349 Kč</p>
+    </div>
+
+    <div class="case">
+        <img src="https://www.thermaltake.com/media/catalog/product/cache/cc8b24283b13da6bc2ff91682c03b54b/s/1/s100_tg_1w.jpg" alt="Obrázek skříně 6">
+        <p>Thermaltake S100 Snow Edition MicroATX Mid Tower</p>
+        <p class="price">Cena: 1249 Kč</p>
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const cases = document.querySelectorAll(".case");
+        const totalPrice = document.getElementById("totalPrice");
+
+        cases.forEach(caseItem => {
+            caseItem.addEventListener("click", updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            cases.forEach(caseItem => {
+                const casePrice = parseInt(caseItem.querySelector(".price").textContent.split("Cena: ")[1].split(" Kč")[0]); // Получаем цену из текста
+                if (!isNaN(casePrice)) { // Проверяем, что удалось получить число
+                    total += casePrice;
+                }
+            });
+            totalPrice.textContent = `Celková cena: ${total} Kč`;
+        }
+    </script>
+</body>
+</html>

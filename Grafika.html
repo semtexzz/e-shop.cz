@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyberte grafickou kartu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .graphics-card {
+            display: inline-block; 
+            margin: 20px;
+            width: 160px; 
+            text-align: center;
+            cursor: pointer; 
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .graphics-card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .graphics-card p {
+            margin: 0;
+            color: #666;
+            font-weight: bold;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vyberte grafickou kartu</h1>
+
+    <div class="graphics-card">
+        <img src="https://image.alza.cz/products/EGr3060lg2/EGr3060lg2.jpg?width=500&height=500" alt="Obrázek grafické karty 1">
+        <p>NVIDIA GeForce RTX 3060</p>
+    </div>
+
+    <div class="graphics-card">
+        <img src="https://image.alza.cz/products/EVr3080th4/EVr3080th4.jpg?width=500&height=500" alt="Obrázek grafické karty 2">
+        <p>NVIDIA GeForce RTX 3080</p>
+    </div>
+
+    <div class="graphics-card">
+        <img src="https://cdn.aukro.cz/images/sk1713097020139/730x548/geforce-gtx-1660-super-192799012.jpeg" alt="Obrázek grafické karty 3">
+        <p>NVIDIA GeForce GTX 1660</p>
+    </div>
+
+    <div class="graphics-card">
+        <img src="https://image.alza.cz/products/EFr4060gx1/EFr4060gx1.jpg?width=500&height=500" alt="Obrázek grafické karty 4">
+        <p>NVIDIA GeForce RTX 4060</p>
+    </div>
+
+    <div class="graphics-card">
+        <img src="https://image.alza.cz/products/RDrx6900x1/RDrx6900x1.jpg?width=500&height=500" alt="Obrázek grafické karty 5">
+        <p>AMD Radeon RX 6900 XT</p>
+    </div>
+
+    <div class="graphics-card">
+        <img src="https://image.alza.cz/products/EFr3070lgz1/EFr3070lgz1.jpg?width=500&height=500" alt="Obrázek grafické karty 6">
+        <p>NVIDIA GeForce RTX 3070</p>
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const graphicsCards = document.querySelectorAll(".graphics-card");
+        const totalPrice = document.getElementById("totalPrice");
+
+        graphicsCards.forEach(card => {
+            card.addEventListener("click", updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            graphicsCards.forEach(card => {
+                const cardText = card.querySelector("p").textContent;
+                const cardPrice = parseInt(cardText.split("-")[1].trim()); // Получаем цену из текста
+                if (!isNaN(cardPrice)) { // Проверяем, что удалось получить число
+                    total += cardPrice;
+                }
+            });
+            totalPrice.textContent = `Celková cena: ${total} Kč`;
+        }
+    </script>
+</body>
+</html>

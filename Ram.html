@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyberte paměť RAM</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 80px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }    
+        .ram-module {
+            display: inline-block; 
+            margin: 10px;
+            width: 200px; 
+            text-align: center;
+            cursor: pointer; 
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ram-module img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .ram-module p {
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vyberte paměť RAM</h1>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/9uc9v3t5lmg81bg7vbei6p94q1-2_1/obrazek" alt="Obrázek paměti RAM 1">
+        <p>Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/enmjvca5quifiakt247ic62kld-1_1/obrazek" alt="Obrázek paměti RAM 2">
+        <p>G.SKILL Ripjaws V 32GB (2x16GB) DDR4 3600MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/73u35li1j0hrrb10pnr5dkqidg_1/obrazek" alt="Obrázek paměti RAM 3">
+        <p>Crucial Ballistix 8GB DDR4 2666MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/3plu4bc770go883sv8p1mbv8o3-1_1/obrazek" alt="Obrázek paměti RAM 4">
+        <p>Team T-FORCE Vulcan Z 16GB (2x8GB) DDR4 3000MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/bthhsvehnqib294pip92g0q568_1/obrazek" alt="Obrázek paměti RAM 5">
+        <p>HyperX Fury 32GB (2x16GB) DDR4 3200MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <div class="ram-module">
+        <img src="https://iczc.cz/1gmdo71kf6g5pbnch03ev1cd6f-9_1/obrazek" alt="Obrázek paměti RAM 6">
+        <p>Patriot Viper Steel 16GB (2x8GB) DDR4 4400MHz</p>
+        <p class="price">Cena: 5999 Kč</p>
+
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const ramModules = document.querySelectorAll(".ram-module");
+        const totalPrice = document.getElementById("totalPrice");
+
+        ramModules.forEach(module => {
+            module.addEventListener("click", updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            ramModules.forEach(module => {
+                if (module.classList.contains('selected')) {
+                    const moduleText = module.querySelector("p").textContent;
+                    const modulePrice = parseInt(moduleText.split(":")[1].trim());
+                    if (!isNaN(modulePrice)) { 
+                        total += modulePrice;
+                    }
+                }
+            });
+            totalPrice.textContent = `Celková cena: ${total} Kč`;
+        }
+
+        ramModules.forEach(module => {
+            module.addEventListener("click", () => {
+                ramModules.forEach(item => item.classList.remove('selected'));
+                module.classList.add('selected');
+                updateTotalPrice();
+            });
+        });
+    </script>
+</body>
+</html>
+

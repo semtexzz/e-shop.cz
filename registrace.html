@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <title>Registrace</title>
+    <link rel="stylesheet" href="barvy.css">
+    <script>
+        function checkForm() {
+            var email = document.getElementById('email').value;
+            var pass = document.getElementById('pass').value;
+            var passagain = document.getElementById('passagain').value;
+            
+            // Kontrola e-mailu.
+            if (!isValidEmail(email)) {
+                alert("Zadejte platný e-mail.");
+                return false;
+            }
+
+            // Test jestli je email real.
+
+            // Kontrola hesla jestli je stejny.
+            if (pass !== passagain) {
+                alert("Hesla se neshodují.");
+                return false;
+            }
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return regex.test(email);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        
+        <div class="eshop">
+          <a href="index.html"><img src="https://i.ibb.co/tzxfyYB/logo.png" alt="E-Shop.cz" width="250"></a>
+        </div>
+        <div class="search">
+            <form><input type="text" placeholder="Vyhledat produkt..."></form>
+        </div> 
+        <div class="login">
+          <img src="https://i.ibb.co/f414nqW/users.png" alt="users" width="30"></a>
+          <div class="login-links">
+              <a href="prihlaseni.html">Přihlášení</a>
+              <a href="registrace.html">Registrace</a>
+          </div>
+      </div>
+      
+      </header>
+<a href="index.html">Zpět</a><br><br>
+<form onsubmit="return checkForm();">
+    <label for="email">E-Mail:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="username">Uživatelské jméno:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="pass">Heslo:</label><br>
+    <input type="password" id="pass" name="pass"><br><br>
+
+    <label for="passagain">Heslo znovu:</label><br>
+    <input type="password" id="passagain" name="passagain"><br><br>
+
+    <button type="submit">Registrovat se</button>
+</form>
+<p>Už máte účet? Přihlašte se <a href="prihlaseni.html">zde</a>.</p>
+</body>
+</html>

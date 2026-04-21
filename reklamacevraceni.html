@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>E-Shop.cz - Reklamace a vrácení</title>
+    <link rel="stylesheet" href="barvy.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        button {
+            background-color: #15fd0071;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d9b0071;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e6900e7e;
+            border-radius: 5px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="eshop">
+            <a href="index.html"><img src="https://i.ibb.co/tzxfyYB/logo.png" alt="E-Shop.cz" width="10h"></a>
+        </div>
+        <div class="search">
+            <form><input type="text" placeholder="Vyhledat produkt..."></form>
+            <script src="search.js"></script>
+        </div>
+        <div class="login">
+            <img src="https://i.ibb.co/f414nqW/users.png" alt="users" width="30"></a>
+            <div class="login-links">
+                <a href="prihlaseni.html">Přihlášení</a>
+                <a href="registrace.html">Registrace</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Reklamační formulář</h2>
+        <p>Reklamace nebo vrácení</p>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Jméno a příjmení</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Vyberte důvod</label>
+                <select id="reason" name="reason" required>
+                    <option value="">- - -</option>
+                    <option value="">Chybějící části nebo příslušenství</option>
+                    <option value="Inquiry">Poškození během dopravy</option>
+                    <option value="Feedback">Výrobek nevyhovuje specifikacím nebo popisu</option>
+                    <option value="Support">Chyby při výrobě</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Důvod pro reklamaci</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Kontaktí informace:</strong></p>
+            <p><strong>Location:</strong> Praha 1 123</p>
+            <p><strong>Email:</strong> reklamacevraceni@eshop.cz</p>
+            <p><strong>Phone:</strong> +1234567890</p>
+        </div>
+    </div>
+
+    <div class="bottom-part-full">
+        © 2023 - 2024 E-Shop.cz | <a target="_blank" rel="noopener" href="onas.html">O nás</a> | <a target="_blank" rel="noopener" href="kontakt.html">Kontakt</a> | <a target="_blank" rel="noopener" href="obchodnipodminky.html">Obchodní podmínky</a> | <a target="_blank" rel="noopener" href="reklamacevraceni.html">Reklamace a vrácení</a>
+    </div>
+
+</body>
+
+</html>

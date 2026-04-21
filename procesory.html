@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyberte procesor</title>
+    <style>
+        .processor {
+            display: inline-block; 
+            margin: 10px;
+            width: 200px; 
+            text-align: center;
+            cursor: pointer; 
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .processor img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .processor p {
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .processor .price {
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 0 0 8px 8px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        #totalPrice {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }    
+    </style>
+</head>
+<body>
+    <h1>Vyberte procesor</h1>
+
+    <div class="processor">
+        <img src="https://iczc.cz/bcb60f8gr2i9f85lu7c3je2iqa-1_1/obrazek" alt="Obrázek procesoru 1">
+        <p>Intel Core i5-11600K</p>
+        <p class="price">Cena: 5999 Kč</p>
+    </div>
+
+    <div class="processor">
+        <img src="https://iczc.cz/9v3nqq10aqhdnbp4mnisui3hid-6_1/obrazek" alt="Obrázek procesoru 2">
+        <p>AMD Ryzen 7 5800X</p>
+        <p class="price">Cena: 11899 Kč</p>
+    </div>
+
+    <div class="processor">
+        <img src="https://iczc.cz/9hd0mtrme8gifb3trqkhjep3e5-1_1/obrazek" alt="Obrázek procesoru 3">
+        <p>Intel Core i9-11900K</p>
+        <p class="price">Cena: 14699 Kč</p>
+    </div>
+
+    <div class="processor">
+        <img src="https://iczc.cz/935ufhee42i6obf6g15bvvt1l4-6_1/obrazek" alt="Obrázek procesoru 4">
+        <p>AMD Ryzen 9 5900X</p>
+        <p class="price">Cena: 16599 Kč</p>
+    </div>
+
+    <div class="processor">
+        <img src="https://iczc.cz/70omudvi44j408j6r8fufhisi4-1_1/obrazek" alt="Obrázek procesoru 5">
+        <p>Intel Core i7-11700K</p>
+        <p class="price">Cena: 10299 Kč</p>
+    </div>
+
+    <div class="processor">
+        <img src="https://iczc.cz/clutamh88ggafai05e6e0vq9p5-6_1/obrazek" alt="Obrázek procesoru 6">
+        <p>AMD Ryzen 5 5600X</p>
+        <p class="price">Cena: 7339 Kč</p>
+    </div>
+
+    <p id="totalPrice">Celková cena: 0 Kč</p>
+
+    <script>
+        const processors = document.querySelectorAll(".processor");
+        const totalPrice = document.getElementById("totalPrice");
+
+        processors.forEach(processor => {
+            processor.addEventListener("click", updateTotalPrice);
+        });

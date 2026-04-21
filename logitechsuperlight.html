@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <title>Logitech G PRO X Superlight na E-Shop.cz</title>
+  <link rel="icon" type="images/favicon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="barvy.css">
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "grid";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="eshop">
+      <a href="index.html"><img src="https://i.ibb.co/tzxfyYB/logo.png" alt="E-Shop.cz" width="10h"></a>
+    </div>
+    <div class="search">
+      <form><input type="text" placeholder="Vyhledat produkt..."></form>
+      <script src="search.js"></script>
+    </div>
+    <div class="login">
+      <img src="https://i.ibb.co/f414nqW/users.png" alt="users" width="30"></a>
+      <div class="login-links">
+        <a href="prihlaseni.html">Přihlášení</a>
+        <a href="registrace.html">Registrace</a>
+      </div>
+    </div>
+  </header>
+  <style>
+    /* womp womp */
+
+    .product-container {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-images {
+      padding: 10px;
+      size: 10ch;
+      max-height: 100px; /* ahgghaahha */
+      max-width: fit-content;
+}
+
+    .product-info {
+      width: 100%; /* lolec */
+      padding: 20px;
+    }
+
+    .bottom-part-full {
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background: #52e24571;
+    background: linear-gradient(45deg, #52e24571, #e6900e7e);
+    position: absolute; /* POTOM NA RELATIVE VOLE */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* xdsdxxddddxdddxd */
+.container {
+  position: relative;
+}
+
+/* dspdklsoldksldk,sd */
+.mySlides {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(124, 124, 124, 0.8);
+} 
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.mySlides img {
+  margin: 0 auto;
+}
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="product-container">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="Images/Logitechsuperlight/image1.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="Images/Logitechsuperlight/image2.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="Images/Logitechsuperlight/image3.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="Images/Logitechsuperlight/image4.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="Images/Logitechsuperlight/image5.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="Images/Logitechsuperlight/image6.png" style="width:50%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image1.png" style="width:50%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image2.png" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image3.png" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image4.png" style="width:50%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image5.png" style="width:50%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Logitechsuperlight/image6.png" style="width:50%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+      <div class="product-info">
+        <h2>Logitech G PRO X Superlight</h2>
+        <h3>Recenze:</h3>
+        <div class="reviews">
+          <p>Průměrná recenze: 4.9 hvězdiček (210 recenzí)</p>
+        </div>
+        &nbsp
+        <p>Herní myš - bezdrátová, pro praváky, optická, připojení skrze bezdrátový USB přijímač, na 1 baterii, citlivost 25600 DPI, možná změna DPI, senzor Logitech Hero 25k, 5 tlačítek, klasické kolečko, rozměry 4 × 6,35 × 12,5 cm (V×Š×H), hmotnost 63 g</p>
+        <h3>Vlastnosti:</h3>
+        <ul>
+          <li>Snímač myši: Optický</li>
+          <li>Ultranízká hmotnost: 63g</li>
+          <li>Výdrž baterie: 70h</li>
+        </ul>
+        <h3>Cena:</h3>
+        <span class="price">2 599,-</span>
+        <button class="buy-button">Do košíku</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="bottom-part-full">
+    <div class="bottom-part-links">
+      </div>
+    © 2023 - 2024 E-Shop.cz | <a target="_blank" rel="noopener" href="onas.html">O nás</a> | <a target="_blank" rel="noopener" href="kontakt.html">Kontakt</a> | <a target="_blank" rel="noopener" href="obchodnipodminky.html">Obchodní podmínky</a> | <a target="_blank" rel="noopener" href="reklamacevraceni.html">Reklamace a vrácení</a>
+  </div>
+</body>
+
+</html>

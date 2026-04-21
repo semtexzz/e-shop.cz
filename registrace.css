@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+}
+
+header {
+    background: #52e24571;
+    background: linear-gradient(45deg, #52e24571, #e6900e7e);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search {
+    flex: 1;
+    justify-content: center;
+}
+
+.search form {
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.search form input {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.login {
+    display: flex;
+    align-items: center; /* Align the content vertically in the container */
+}
+
+.person {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}

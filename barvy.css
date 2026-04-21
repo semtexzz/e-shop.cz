@@ -1,0 +1,222 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+}
+
+.header-title {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+}
+
+header {
+    background: #52e24571;
+    background: linear-gradient(45deg, #52e24571, #e6900e7e);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.eshop img {
+    max-width: 250px; /* Adjust the maximum width of the logo */
+    max-height: auto; /* Adjust the maximum height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .eshop img {
+        max-width: 100px; /* Adjust the maximum width of the logo for phones */
+    }
+}
+
+.search {
+    flex: 1;
+    justify-content: center;
+}
+
+.search form {
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.search form input {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+#search-input {
+    padding: 5px;
+    width: 200px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px;
+}
+
+.buttons {
+    min-width: 150px;
+    border: none;
+    color: white;
+    border: #ccc 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons-sale {
+    min-width: 150px;
+    border: none;
+    color: white;
+    border: #c25c5c 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons-sale:hover {
+    background-color: #c25c5c;
+    color: black;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login img {
+    width: 20px; /* Adjust the width as needed */
+    margin-right: 5px;
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.login a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.middle-part {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    align-items: flex-start; /* Align categories on the left side */
+    justify-content: space-between; /* Add space between categories and slideshow */
+    max-width: 1400px;
+}
+
+.categories {
+    text-align: left;
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.categories p {
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    margin-top: 30px;
+}
+
+.categories li {
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.categories-section {
+    margin-bottom: 40px;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    max-width: 300px;
+}
+
+.slideshow-container {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    animation: slide 6s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0%, 95% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+    
+.bottom-part-full {
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background: #52e24571;
+    background: linear-gradient(45deg, #52e24571, #e6900e7e);
+    position: absolute; /* POTOM NA RELATIVE VOLE */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
