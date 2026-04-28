@@ -1,5 +1,5 @@
 # E-SHOP
-E-shop na styl Alzy s variací elektroniky.
+E-shop na styl Alzy se sortimentem elektroniky.
 
 ## Použité technologie
 - HTML
