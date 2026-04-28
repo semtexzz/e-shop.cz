@@ -1,44 +1,5 @@
 # E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.d+šč+š+edsd+š+š
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+E-shop na styl Alzy s variací elektroniky.
 
 ## Použité technologie
 - HTML
@@ -49,52 +10,7 @@ Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 - MongoDB 
 
 ## Příspěvky
-dasdě+š+š+bo nápady na vylepšení, neváhejte vytvořit nový problém nebo poslat požadavek na začlenění změn.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
+Nápady na vylepšení, neváhejte vytvořit nový problém nebo poslat požadavek na začlenění změn.
 
 
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
-
-# E-SHOP
-Tento repozitář obsahuje zdrojový kód pro E-SHOP.
 
