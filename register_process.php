@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$user, $email, $hashed_password]);
         echo "Registrace úspěšná! <a href='prihlaseni.html'>Nyní se můžete přihlásit zde.</a>";
     } catch (PDOException $e) {
-        if ($e->getCode() == 23000) { // Chyba pro duplicitní jméno/email
+        if ($e->getCode() == 23000) {
             echo "Uživatel nebo email již existuje.";
         } else {
             echo "Chyba při registraci: " . $e->getMessage();
