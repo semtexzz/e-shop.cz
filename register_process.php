@@ -6,10 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
-    // 1. Hashování hesla (bezpečnost!)
     $hashed_password = password_hash($pass, PASSWORD_DEFAULT);
 
-    // 2. Uložení do databáze pomocí Prepared Statements
     $sql = "INSERT INTO `eshop-accounts` (username, email, password_hash) VALUES (?, ?, ?)";
     $stmt = $pdo->prepare($sql);
 
